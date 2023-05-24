@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Imagens</title>
+</head>
+<body>
+    <h1>Utilizando imagens dinâmicas</h1>
+    <p>Aplicando o conteúdo sobre imagens dinâmicas</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/Img-2-P.jpg" type="image/jpg">
+        <source media="(max-width: 1250px )" srcset="imagens/Img-2-M.jpg" type="image/jpg">
+        <img src="imagens/Img-2-G.jpg" alt="Foto-G">
+    </picture>
+    <br>
+    <h2>A foto muda de tamanho conforme a variação do tamanho da janela</h2>
+    
+</body>
+</html>

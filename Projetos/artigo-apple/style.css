@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300;1,400;1,500&display=swap');
+/*
+font-family: 'Roboto', sans-serif;
+*/
+
+@font-face {
+    font-family:'Destaque', sans-serif;;
+    src: url(fonts/SF\ Proverbial\ Gothic\ Oblique.ttf) format('truetype');
+}

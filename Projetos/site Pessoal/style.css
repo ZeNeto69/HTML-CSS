@@ -1,0 +1,112 @@
+@charset "UTF8";
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap');
+/*
+ font-family: 'Oswald', sans-serif;
+*/
+@font-face {
+    font-family: 'paragrafo', sans-serif;
+    src: url(fonts/coolvetica\ condensed\ rg.otf) format('opentype');
+}
+
+:root {
+    --cor0: #DEAFA6;
+    --cor1: #9F91DE;
+    --cor2: #DED37A;
+    --cor3: #85DEB7;
+    --cor4: #8C7ADE;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color:var(--cor0);
+}
+
+header {
+    height:115px;
+    font-family:'Oswald', sans-serif ;
+    font-weight: 500;
+    text-align: center;
+    background-color: var(--cor3);
+    padding: 20px;
+    margin: auto;
+}
+
+header h1{
+    padding: 10px;
+    font-size: 2.5em;
+}
+
+
+nav{
+    margin: 0px;
+    text-align: left;
+}
+
+nav > a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 8px;
+}
+
+nav > a:hover {
+    background-color:rgba(0, 0, 0, 0.699);
+    text-decoration: underline;
+    font-style: italic;
+}
+
+main {
+    max-width: 1200px;
+    background-color:#8C7ADE;
+    margin: auto;
+    margin-bottom: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+}
+
+main h2 {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+    margin: auto;
+}
+
+main img {
+    display: block;
+    margin: auto;
+}
+
+main aside h1 {
+    font-family:'Oswald', sans-serif ;
+    font-weight: 600;
+    width: 500px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.596), #8C7ADE );
+    margin: 0px;;
+}
+
+main aside p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+}
+
+footer {
+    background-color: var(--cor2);
+    margin: auto;
+}
+
+footer img {
+    text-align: center;
+}
+
+
+    

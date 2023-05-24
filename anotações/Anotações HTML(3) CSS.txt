@@ -1,0 +1,45 @@
+usar CSS em HTML pode ter 3 formas diferentes:
+
+
+1°- Usar CSS Inline: CSS inline é usado na mesma linha de código
+que você deseja estilizar.
+
+ex- <p style="text-align: right;"> Olá, Mundo! </p>
+
+
+
+2°- Usar CSS Local / Interno que se cria a tag <style> dentro da tag <head>
+constitui em criar todas a estilização nessa tag.
+
+ex- <style>
+	
+        body {
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        h1 {
+            color:white;
+            background-color:lightcoral ;
+        }
+        h2 {
+            color: lightslategray;
+        
+        }
+        p {
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: justify;
+        }
+    </style>
+
+
+
+3°- Usar CSS externo é a forma mais indicada para se usar, quando há
+um grande número de páginas com a mesma estilização, ja que é criado 
+um arquivo separado, e usando a tag " <link rel="stylesheet" href="style.css"> "
+você linka o arquivo HTML no arquivo CSS
+
+
+obs: sempre bom lembrar de colocar a seguinte ordem no arquivo CSS
+" @charset "UTF8"; "
