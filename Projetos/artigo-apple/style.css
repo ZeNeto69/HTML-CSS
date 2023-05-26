@@ -9,3 +9,55 @@ font-family: 'Roboto', sans-serif;
     font-family:'Destaque', sans-serif;;
     src: url(fonts/SF\ Proverbial\ Gothic\ Oblique.ttf) format('truetype');
 }
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor0: #E0F2E9;
+    --cor1: #6E6E73;
+    --cor2: #F9C80E;
+    --cor3: #0A0909;
+
+    --fonte
+}
+
+body {
+    background-image: linear-gradient(to top, var(--cor1) 60%, var(--cor3));
+}
+
+header {
+    text-align: center;
+    font-family: '';
+    background-color: var(--cor0);
+}
+
+header h1, p {
+    margin: 30px;
+}
+
+nav {
+    margin: 30px 0px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor2);
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    margin: 10px;
+    box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.445);
+}
+
+nav a:hover {
+    border: 10px ;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #6e6e73a2;
+    transition: 0.5s;
+    
+}
