@@ -32,7 +32,6 @@ body {
 header {
     height: 200px;
     text-align: center;
-    font-family: 'destaque', sans-serif;
     background-color: var(--cor0);
 }
 
