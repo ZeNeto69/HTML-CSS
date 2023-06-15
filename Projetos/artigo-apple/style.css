@@ -1,22 +1,24 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family:'Transformers' ;
+    src: url(fonts/Transformers.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300;1,400;1,500&display=swap');
 /*
 font-family: 'Roboto', sans-serif;
 */
-
-@font-face {
-    font-family: 'Destaque', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    src: url(fonts/SF\ Proverbial\ Gothic\ Extended\ Oblique.ttf) format('truetype');
-}
-
-
 
 :root {
     --cor0: #E0F2E9;
     --cor1: #6E6E73;
     --cor2: #F9C80E;
     --cor3: #0A0909;
+
+    --font-destaque: 'Transformers';
 }
 
 body {
@@ -28,20 +30,21 @@ body {
 }
 
 header {
-    height: 170px;
+    height: 200px;
     text-align: center;
     font-family: 'destaque', sans-serif;
     background-color: var(--cor0);
 }
 
-header h1 {
+header > h1 {
     margin: 0px;
     padding: 0px;
     color: var(--cor3);
-    font-family: 'Destaque', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--font-destaque);
+    font-size: 3em;
 }
 
-header p {
+header > p {
     text-align: center;
     font: bold 15pt 'destaque', sans-serif;
     color: var(--cor3);
@@ -53,7 +56,7 @@ nav {
 
 }
 
-nav a {
+nav > a {
     text-decoration: none;
     color: var(--cor2);
     font: bolder 1.2em  'Roboto', sans-serif;
@@ -64,7 +67,7 @@ nav a {
 
 }
 
-nav a:hover {
+nav > a:hover {
     border: 10px ;
     border-radius: 5px;
     padding:3px;
@@ -79,14 +82,14 @@ main {
     padding: 30px;
     background-image: linear-gradient(to bottom, var(--cor1) 60%, var(--cor3));
 }
+
 h2 {
-    margin-left: 0px;
     color:var(--cor2);
     font-family: 'Roboto', sans-serif;
-    font-size: 17pt;
+    font-size: 19pt;
 }
 
-article p {
+article > p {
     color: var(--cor0);
     font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
@@ -94,8 +97,25 @@ article p {
     text-align: justify;
 }
 
-ul {
-    color: var(--cor2);
+aside {
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 7px;
+}
+
+aside > h3 {
+    font: italic bold 1.3em 'Roboto', sans-serif;
+    text-decoration: underline;
+    color: var(--cor3);
+}
+
+aside > p {
+    color: var(--cor1);
+    font: bold 13pt sans-serif;
+}
+
+aside > ul {
+    color: var(--cor3);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 20pt;
 }
